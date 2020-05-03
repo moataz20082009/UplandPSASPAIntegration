@@ -1,0 +1,12 @@
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="expenseReports">
+  <thead>
+    <tr>
+      <th>Report Number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let expenseReport of expenseReports">
+      <td>{{ expenseReport.ReportNumber }}</td>
+    </tr>
+  </tbody>
+</table>
